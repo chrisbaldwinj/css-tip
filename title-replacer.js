@@ -60,12 +60,24 @@
 
 /* // How to initialize csstip
 
+csstips(options[,elements]);
+
+elements is a CSS selector type. 
+Get all class elements of `tipper`
+csstips(options,".tipper");
+
 document.addEventListener('DOMContentLoaded',function() {
   csstips({
     effect:"fadein",
     placement:"top",
     theme:"dark"
   });
+  
+  csstips({
+	effect: "bounce",
+    placement:"bottom",
+    theme:"light"	
+  },"a");
 });
 
 */
